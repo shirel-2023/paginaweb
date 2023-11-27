@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Primeros Auxilios</title>
+    <link rel="stylesheet" href="1.menu.css">
+    <link rel="stylesheet" href="1.articulos.css">
+    <link rel="stylesheet" href="1.footer.css">
+    
+  
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="1.index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="2.0.lecciones.html">Lecciones de Primeros Auxilios</a>
+                <ul class="submenu">
+                    <li><a href="3.salvameami.html">Salvarme a Mí</a></li>
+                    <li><a href="3.1.salvaalguien.html">Salvar a Alguien Más</a></li>
+                </ul>
+            </li>
+            <li><a href="5.anatomia.html">Anatomía Básica</a></li>
+            <li><a href="4.contactos.html">Contacto</a></li>
+        </ul>
+    </div>
+    
+    <header class="alin-debajo">
+        <h1>Cursos de Primeros Auxilios</h1>
+        <p>Aprende a salvar vidas con nuestros cursos de primeros auxilios.</p>
+        
+    </header>
+
+    <div class="container">
+        <h2 class="u">Presentación del Curso de Primeros Auxilios</h2>
+        <p>En nuestro curso de primeros auxilios, te proporcionamos los conocimientos y habilidades necesarios para responder eficazmente en situaciones de emergencia. Aprenderás a realizar RCP, detener hemorragias, inmovilizar fracturas y más. ¡Salva vidas hoy!</p>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img width="100px" src="https://img.freepik.com/fotos-premium/vista-anterior-cuerpo-humano-ilustracion-3d_1401-499.jpg" alt="Imagen 1">
+                <img src="https://www.mozaweb.com/es/mozaik3D/BIO/ember/emberi_test/960.jpg" alt="Imagen 2">
+                <img src="https://www.mozaweb.com/es/mozaik3D/BIO/ember/human_body_for_kids/960.jpg" alt="Imagen 3">
+                <img src="https://i0.wp.com/ensedeciencia.com/wp-content/uploads/2021/07/Anaromia1.jpg?resize=800%2C450&ssl=1" alt="Imagen 4">
+                <img src="https://static8.depositphotos.com/1252628/990/i/450/depositphotos_9900616-stock-photo-human-body-by-x-ray.jpg" alt="Imagen 5">
+         
+            </div>
+            <div class="carousel-arrow prev" onclick="prevImage()">&#8249;</div>
+            <div class="carousel-arrow next" onclick="nextImage()">&#8250;</div>
+        </div>
+        
+
+        <script>
+            // Agrega el script para controlar el carrusel
+            const carousel = document.querySelector('.carousel');
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const totalImages = document.querySelectorAll('.carousel img').length;
+            let currentIndex = 0;
+    
+            // Actualiza la posición del carrusel
+            function updateCarousel() {
+                carousel.style.transform = `translateX(${-currentIndex * 100}%)`;
+            }
+    
+            // Cambia la imagen cuando se hace clic en la miniatura
+            thumbnails.forEach((thumbnail, index) => {
+                thumbnail.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+    
+            // Automáticamente cambia las imágenes cada 3 segundos
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalImages;
+                updateCarousel();
+            }, 3000);
+            
+      
+         // Funciones para navegar a la imagen anterior y siguiente
+         function prevImage() {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            updateCarousel();
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            updateCarousel();
+        }
+        </script>
+
+        <h2 class="u">¿Qué Puedes Aprender?</h2>
+        <div class="cuadro">
+        <p>Los visitantes de nuestro curso pueden aprender:</p>
+        <ul>
+            <li>Técnicas de RCP (Reanimación Cardiopulmonar).</li>
+            <li>Control de hemorragias y vendaje.</li>
+            <li>Inmovilización de fracturas y esguinces.</li>
+            <li>Manejo de asfixia y atragantamiento.</li>
+        </ul>
+    </div>
+        
+        <center>
+            <video  autoplay loop muted class="hola">
+                <source src="videos\Cuerpohumano - Hecho con Clipchamp_1699835898675.mp4" type="video/mp4">
+              </video>
+              <video autoplay loop muted  class="hola">
+                <source src="videos\cuerpo completo mas - Hecho con Clipchamp_1699837726683.mp4" type="video/mp4">
+              </video>
+        
+            <a href="2.0.lecciones.html" class="btn">Acceder a las Lecciones</a>
+        </center>
+    </div>
+
+
+    <footer>
+        <p>Programadores:</p>
+        <ul>
+            <li>Shirel Landa Espejo</li>
+            <li>Francisco Alexis Nocelo Zempoalteca</li>
+            <li>Yashlin Lira Hernandez</li>
+            <li>Daniela Jasmin Hernandez Juarez</li>
+            <li>Oscar Julian Rojas Garcia</li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+div{
+border: 1px solid gray;
+padding: 8px;
+}
+
+h2 {
+text-align: center;
+text-transform:uppercase;
+color: #5e2222;
+font-size: 24px;
+}
+body{
+  background-color: #f8f8f8;
+}
+
+.seccion2{
+  background-color:rgb(221, 226, 230);
+  width: 90%;
+  margin: 20px;
+  margin-left: 4%;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  text-align: justify;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.seccion3{
+  background-color:rgb(221, 226, 230);
+  width: 50%;
+  margin: 20px;
+  margin-left: 25%;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  text-align: justify;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 6%;
+  margin-top: 6%;
+}
+.sub{
+  font-size: 30px;
+}
+.espacio{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+p {
+text-align: justify;
+letter-spacing: 1px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 16px;
+}
+
+.vid{
+  padding: 10px;
+  width: 90%;
+  height: 300px;
+}
+.seccion{
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.alineacion{
+    padding:20px;
+}
+
+h4{
+    font-size: 18px;
+    font-family: cursive;
+    color: #864141;
+    text-align: center;
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: green; }
+}
+  
+.letter {
+    animation: colorChange 3s infinite;
+}
+
+.spaced-list li {
+    padding-bottom: 10px; /* Ajusta el espaciado inferior según tu preferencia */
+}
+
+/* Estilos adicionales para hacer que la imagen sea responsiva */
+  @media (max-width: 768px) {
+    .pri {
+      flex-direction: column;
+    }
+  
+    .pri,
+    .seg {
+      text-align: center;
+    }
+  }

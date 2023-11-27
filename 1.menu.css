@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('tu-imagen-de-fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del menú */
+.menu {
+    background-color: #f82f19;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    padding: 10px 20px;
+    position: relative; /* Añade posición relativa para el posicionamiento del submenú */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+/* Estilos del submenú */
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background-color: #d34030;
+    list-style: none;
+    padding: 0;
+}
+
+.menu .dropdown:hover .submenu {
+    display: block; /* Muestra el submenú al hacer hover en el elemento "Lecciones de Primeros Auxilios" */
+}
+
+.menu .submenu li {
+    padding: 10px 20px;
+}
+
+.menu .submenu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu .submenu a:hover {
+    opacity: 0.7;
+}
+
+.alin-debajo {
+    margin-top: 20px;
+}

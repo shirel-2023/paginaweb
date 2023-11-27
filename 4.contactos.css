@@ -1,0 +1,79 @@
+/*INICIO*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #e74c3c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+}
+h1 {
+    font-size: 36px;
+}
+.emergency-contacts {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: justify;
+}
+.alineacion{
+    padding-right: 10px;
+}
+h2 {
+    font-size: 24px;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+p {
+    font-size: 16px;
+}
+/*INICIO*/
+
+
+/*LISTA*/
+.emergency-list {
+    list-style: none;
+    padding: 0;
+}
+.emergency-list li {
+    margin-bottom: 10px;
+}
+.emergency-list li strong {
+    font-weight: bold;
+    color:#f82f19; /* Color de texto para los nombres de organizaciones */
+}
+.emergency-list li {
+    font-size: 16px;
+}
+/*LISTA*/
+
+/*IMAGENES*/
+.image-container {
+    float: right;
+    margin-right: 20px;
+    border: 2px solid #000;
+    border-radius: 6%;
+    padding: 5px;
+    width: 300px;
+    margin-left: 10px;
+}
+.image-container img {
+    width: 300px;
+}
+/*IMAGENES*/
+
+/*SUBTITULO*/
+.Subtitulo{
+    text-align: center;
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*SUBTITULO*/

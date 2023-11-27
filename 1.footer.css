@@ -1,0 +1,18 @@
+/* Estilos del pie de página */
+footer {
+    background-color: #e74c3c;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer li {
+    padding: 5px 10px;
+}
